@@ -7,6 +7,7 @@
 
 [![Travis build
 status](https://travis-ci.com/ztimpe/simpleschoolsR.svg?branch=master)](https://app.travis-ci.com/ztimpe/simpleschoolsR.svg?branch=master)
+[![R-CMD-check](https://github.com/ztimpe/simpleschoolsR/workflows/R-CMD-check/badge.svg)](https://github.com/ztimpe/simpleschoolsR/actions)
 <!-- badges: end -->
 
 The goal of simpleschoolsR is to alleviate the burden of importing,
