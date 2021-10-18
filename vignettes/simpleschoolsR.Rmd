@@ -1,0 +1,43 @@
+---
+title: "simpleschoolsR"
+author: "Zach Timpe"
+date: "10-18-2021"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{simpleschoolsR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo=TRUE,
+  include=TRUE
+)
+```
+
+```{r setup}
+library(simpleschoolsR)
+```
+The purpose of this package is to ease the buren of cleaning and preparing school
+names and addresses for tidy presentation and use in the event that matching
+is needed. This short vignette provides a case example of using the first function
+of this package, **clean_schools**, to convert a column of school names to title
+case, and create a new column prepared for potential matching.
+
+# Clean school names
+```{r}
+test_df <- data.frame(schools=c("Paola High School", "Louisburg High School", 
+                "osawatomie high", "prarie view high school"))
+```
+To utilize the clean_schools function, specify the name of the data frame and the
+column you wish to clean. Don't forget that you need to specify a list of terms to replace, along with their
+replacements!
+```{r}
+strings <- simpleschoolsR::school_strings()
+```
+```{r}
+simpleschoolsR::clean_schools(test_df,schools,strings)
+```

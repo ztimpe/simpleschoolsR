@@ -1,0 +1,38 @@
+Package: simpleschoolsR
+Type: Package
+Title: simpleschoolsR: A selection of tools for cleaning school information
+Version: 0.1.0
+Authors@R: 
+    person(given = "Zach",
+           family = "Timpe",
+           role = c("aut", "cre"),
+           email = "zacharytimpe@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The simpleschoolsR package is collection of concise data sets and 
+ functions designed to alleviate the burden of importing, cleaning, and
+ matching data sets with U.S. schools as a primary key. For example,
+ an analyst who wishes to join data from the National Center for Education
+ Statistics to data from the Civil Rights DAta Collection may be able to
+ use NCES IDs. However, in instances where a common ID is not available,
+ names and addresses may allow for matching...when they are accurate and
+ consistent across data frames. Unfortunately, this is rarely the case, resulting
+ in a frustrating and costly experience for the analyst. This package seeks to
+ alleviate basic issues stemming from these inconsistencies.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    magrittr,
+    dplyr,
+    rlang,
+    stringr,
+    tidyselect
+VignetteBuilder: knitr
