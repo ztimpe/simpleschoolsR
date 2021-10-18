@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.com/ztimpe/simpleschoolsR.svg?branch=master)](https://travis-ci.com/ztimpe/simpleschoolsR)
+status](https://travis-ci.com/ztimpe/simpleschoolsR.svg?branch=master)](https://app.travis-ci.com/ztimpe/simpleschoolsR.svg?branch=master)
 <!-- badges: end -->
 
 The goal of simpleschoolsR is to alleviate the burden of importing,
