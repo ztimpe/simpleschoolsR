@@ -19,8 +19,8 @@ alleviate basic issues stemming from these inconsistencies.
 
 ## Installation
 
-This package has not been released on CRAN, but can be downloaded with
-my approval.
+This package has not been released on CRAN, and is under active development. 
+Proceed with caution!
 
 ``` r
 install.packages("simpleschoolsR")
